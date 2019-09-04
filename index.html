@@ -146,7 +146,87 @@
       color: orange;
     }
     
-  
+    .container-fluid-exhibition {
+      background-color: rgb(13, 151, 172);
+    }
+
+    .container-fluid-exhibition #current-exhibition,
+    .container-fluid-contact #contact,
+    .container-fluid-collection #collection {
+      font-family: GilmerBold;
+      font-size: 40px;
+      color: white;
+    }
+
+    h2 {
+      font-family: Georgia-Bold;
+      font-size: 30px;
+      color: white;
+    }
+
+    .container-fluid-exhibition ul {
+      list-style: none;
+      font-family: GilmerBold;
+      font-size: 20px;
+      color: white;
+      padding: 0;
+    }
+
+    .container-fluid-exhibition .row a {
+      text-decoration: none;
+      font-family: GilmerBold;
+      font-size: 20px;
+      color: white;
+    }
+
+    .container-fluid-exhibition .row a:hover {
+      color: rgb(221, 160, 51);
+    }
+    
+    .box {
+      background-color: white;
+    }
+    
+    .container-fluid-collection,
+.container-fluid-imagegallery {
+  background-color: rgb(226,83,47);
+}
+
+.container-fluid-collection p {
+  font-family: GilmerBold;
+  font-size: 20px;
+  color: white;
+}
+
+.container-fluid-collection p span:hover {
+  color: rgb(221,160,81);
+}
+
+.container-fluid-imagegallery #onesix .text1, 
+.container-fluid-imagegallery #twosix .text2,
+.container-fluid-imagegallery #threesix .text3,
+.container-fluid-imagegallery #foursix .text4,
+.container-fluid-imagegallery #fivesix .text5,
+.container-fluid-imagegallery #sixsix .text6{
+  background-color: white;
+  color: black;
+  opacity:1;
+  font-family: GilmerBold;
+  font-size: 15px;
+  position:relative;
+  bottom:0px;
+  left:0px;
+  visibility:hidden;
+}
+
+.container-fluid-imagegallery #onesix:hover .text1,
+.container-fluid-imagegallery #twosix:hover .text2,
+.container-fluid-imagegallery #threesix:hover .text3,
+.container-fluid-imagegallery #foursix:hover .text4,
+.container-fluid-imagegallery #fivesix:hover .text5,
+.container-fluid-imagegallery #sixsix:hover .text6{
+  visibility:visible;
+}
   </style>
   </head>
   
@@ -255,7 +335,82 @@
 </div>
 </a>
           </div>     
-      
+          
+<!--Current exhibition section-->
+          <div class="container-fluid-exhibition mt-3 ">
+            <div class="row ">
+              <div class="col text-center my-2 mx-3 " id="current-exhibition">current exhibition</div>
+            </div>
+
+            <div class="row ">
+              <div class="col-sm-10 col-md-10 col-lg-6 my-2 mx-4 "><img class="img-fluid p-3 " src="images/exhibition.png "></div>
+
+              <div class="row ">
+                <div class="col-sm-12 col-sm-12 col-lg-8 m-5 ">
+                  <h2>colour playground</h2>
+                  <div class="row mx-3 my-3 row-sm-5 row-md-4 row-lg-4 "></div>
+                  <ul>
+                    <li>o7.o9 // 27.o9.2o19</li>
+                    <li>12-7pm daily</li>
+                    <li>Artspace@Helutrans</li>
+                  </ul>
+                  <div class="row mx-1 my-3 "><a href='https://www.artporters.com/wp-content/uploads/2019/08/Colour-Playground-Catalogue-1.pdf'>more details→</a>
+                  </div>
+                </div>
+</div>
+</div>
+<!--Collection section with image gallery and image captions on hover-->
+<div class="container-fluid-collection">
+<div class="box">&nbsp;</div>
+            <div class="row ">
+              <div class="col text-center my-2 mx-3" id="collection">collection</div>
+            </div>
+ <div class="row justify-content-center">
+              <div class="col text-center col-sm-8 col-md-8 col-lg-10 my-2 mx-4 ">
+              <p>The Colour Playground series features 25 installations,<br>
+produced and painted by Vietnamese artist <span><a href="artists.html#D">Doãn Tú Ly</a></span>.</p></div>
+
+    </div>
+</div>
+
+
+
+<div class="container-fluid-imagegallery">
+<div class="row justify-content-center">
+  
+  
+<div class="column px-1 mx-1" id="onesix">
+<img class="img1" src="images/collection1.jpg">
+<p class="text1"><i>Blue Crab</i>, 2015</p>
+</div>
+
+<div class="column px-1 mx-1" id="twosix">
+<img class="img2" src="images/collection2.jpg">
+<p class="text2"><i>Halved</i>, 2013</p>
+</div>
+  
+<div class="column px-1 mx-1" id="threesix">
+<img class="img3" src="images/collection3.jpg">
+<p class="text3"><i>Everything Nice</i>, 2015</p>
+</div>
+  
+
+</div>
+ <div class="row justify-content-center pt-3 pb-5"> 
+<div class="column px-1 mx-1" id="foursix">
+<img class="img4" src="images/collection4.jpg">
+<p class="text4"><i>Exploration</i>, 2016</p>
+</div>
+<div class="column px-1 mx-1" id="fivesix">
+<img class="img5" src="images/collection5.jpg">
+<p class="text5"><i>Stationary</i>, 2015</p>
+</div>
+<div class="column px-1 mx-1" id="sixsix">
+<img class="img6" src="images/collection6.jpg">
+<p class="text6"><i>Carbs</i>, 2011</p>
+</div>
+  </div>
+</div>      
       
       
       
