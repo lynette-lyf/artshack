@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="artists.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>artshack</title>
 
   <style>
@@ -160,14 +161,26 @@
   color: rgb(6,81,37);
 }
 
+.container-fluid-footer h3 a {
+  text-decoration: none;
+  color: rgb(6,81,37);
+}
+
+
 .container-fluid-footer #socials a {
   text-decoration: none;
   color: rgb(6,81,37);
   margin: 6px;
 }
 
-.container-fluid-footer #socials a:hover {
+.container-fluid-footer #socials a:hover,
+.container-fluid-footer h3 a:hover,
+.container-fluid-footer .newsletter:hover{
   color: rgb(221,160,51);
+}
+
+@media (max-width: 1023px) {
+  .container-fluid-footer .newsletter { display: none; }
 }
 
 .container-fluid-artists {
@@ -379,6 +392,7 @@ of media ranging from collage, photography, illustration, light, and installatio
 
 
 </div>
+</div>
 
 <!--Artist 2-->
 <div class="container-fluid-artistscontent mt-3">
@@ -466,6 +480,7 @@ ambience of our environment via a personal state of aesthetic identity. A proces
                 </script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous ">
                 </script>
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 
@@ -473,7 +488,7 @@ ambience of our environment via a personal state of aesthetic identity. A proces
 
 <!--Page footer-->
   <div class="container-fluid-footer">
-  <div class="box">&nbsp;</div>
+  <div class="box">.</div>
             <div class="row justify-content-center pt-1 mx-1 mt-2 mb-2">
               <div class="column col-xl-2 col-lg-2 col-md-3 col-sm-10">
 <h3 class="copyright">© 2019<br>artshack Pte Ltd</h3>
@@ -481,8 +496,13 @@ ambience of our environment via a personal state of aesthetic identity. A proces
 <div class="column col-xl-2 col-lg-3 col-md-3 col-sm-10">
 <h3 class="address">Blk 5 Lock Road<br> #01-06 Singapore 108933</h3>
 </div>
+
 <div class="column col-xl-2 col-lg-3 col-md-3 col-sm-10 ">
-<h3 class="contactinfo">+65 6296 6346  |  +65 8234 5634<br>contact@artshack.com</h3>
+<h3 class="contactinfo">+65 6296 6346  |  +65 8234 5634<br><a href="mailto:contact@artshack.com">contact@artshack.com</a></h3>
+</div>
+
+<div class="column col-xl-2 col-lg-2 col-md-0 col-sm-0">
+<h3 class="newsletter"><a data-toggle="modal" data-target="#modalSubscriptionForm">SUBSCRIBE TO<br>OUR NEWSLETTER</h3></a>
 </div>
 
 <div class="column col-xl-2 col-lg-2 col-md-3 col-sm-10 " id="socials">
@@ -492,7 +512,6 @@ ambience of our environment via a personal state of aesthetic identity. A proces
   <a style="margin:5px" href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
   <a style="margin:5px" href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
 </div>
-
 
 </div>
 </div>

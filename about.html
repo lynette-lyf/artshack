@@ -160,16 +160,27 @@
   color: rgb(6,81,37);
 }
 
+.container-fluid-footer h3 a {
+  text-decoration: none;
+  color: rgb(6,81,37);
+}
+
+
 .container-fluid-footer #socials a {
   text-decoration: none;
   color: rgb(6,81,37);
   margin: 6px;
 }
 
-.container-fluid-footer #socials a:hover {
+.container-fluid-footer #socials a:hover,
+.container-fluid-footer h3 a:hover,
+.container-fluid-footer .newsletter:hover{
   color: rgb(221,160,51);
 }
 
+@media (max-width: 1023px) {
+  .container-fluid-footer .newsletter { display: none; }
+}
 .container-fluid-ourstory #our-story,
 .container-fluid-objective #objective,
 .container-fluid-team #team {
@@ -410,8 +421,13 @@ across the globe to promote their works via domestic and international art marke
 <div class="column col-xl-2 col-lg-3 col-md-3 col-sm-10">
 <h3 class="address">Blk 5 Lock Road<br> #01-06 Singapore 108933</h3>
 </div>
+
 <div class="column col-xl-2 col-lg-3 col-md-3 col-sm-10 ">
-<h3 class="contactinfo">+65 6296 6346  |  +65 8234 5634<br>contact@artshack.com</h3>
+<h3 class="contactinfo">+65 6296 6346  |  +65 8234 5634<br><a href="mailto:contact@artshack.com">contact@artshack.com</a></h3>
+</div>
+
+<div class="column col-xl-2 col-lg-2 col-md-0 col-sm-0">
+<h3 class="newsletter"><a data-toggle="modal" data-target="#modalSubscriptionForm">SUBSCRIBE TO<br>OUR NEWSLETTER</h3></a>
 </div>
 
 <div class="column col-xl-2 col-lg-2 col-md-3 col-sm-10 " id="socials">
