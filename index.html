@@ -121,6 +121,10 @@
       color: black;
       font-size: 18px;
     }
+    
+    .navbar .navbar-toggler-icon {
+  background-image: url(images/navicon.png);!important
+}
 
 
     .container-fluid-exhibition {
@@ -210,6 +214,10 @@
   color: white;
 }
 
+.container-fluid-collection p span {
+  text-decoration:underline;
+}
+
 .container-fluid-collection p span:hover {
   color: rgb(221,160,81);
 }
@@ -287,7 +295,7 @@
     <!--Navbar credits to https://getbootstrap.com/docs/4.3/components/navbar/-->
     <nav class="navbar navbar-expand-lg navbar-light bg-nobg">
       <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" style="border:none;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -296,7 +304,7 @@
             <a class="nav-link-about" href="about.html">about.</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link-artists" href="artists-list.html">artists.</a>
+            <a class="nav-link-artists" href="artists.html">artists.</a>
           </li>
           <li class="nav-item">
             <a class="nav-link-collection" href="#collection">collection.</a>
