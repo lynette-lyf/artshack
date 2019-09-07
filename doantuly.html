@@ -312,8 +312,8 @@ hr {
           </li>
           <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header text-center" style="color: white;background-color:rgb(221,160,51);">
+              <div class="modal-content" style="background-color:rgb(221,160,51);">
+                <div class="modal-header text-center mx-auto" style="color: white;background-color:rgb(221,160,51);">
                   <h4 class="modal-title">Subscribe to our Newsletter
                     <div style="font-size: 14px">(& get exclusive invitations to
                       <div> our exhibition openings!)</div>
@@ -328,6 +328,8 @@ hr {
                     <input type="text" id="form3" class="form-control validate">
                     <label data-error="wrong" data-success="right" for="form3">name</label>
                   </div>
+                  
+                
 
                   <div class="md-form mx-3">
                     <input type="email" id="form2" class="form-control validate">
@@ -336,7 +338,7 @@ hr {
 
                 </div>
                 <div class="modal-footer d-flex justify-content-center" style="color: white;background-color:rgb(226,83,47);>
-        <button class=" btn btn-indigo ">Subscribe</button>
+                <button id="submit" type="submit" class="btn" data-dismiss="modal">Subscribe</button>
       </div>
     </div>
   </div>

@@ -322,8 +322,8 @@
           </li>
           <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header text-center" style="color: white;background-color:rgb(221,160,51);">
+              <div class="modal-content" style="background-color:rgb(221,160,51);">
+                <div class="modal-header text-center mx-auto" style="color: white;background-color:rgb(221,160,51);">
                   <h4 class="modal-title">Subscribe to our Newsletter
                     <div style="font-size: 14px">(& get exclusive invitations to
                       <div> our exhibition openings!)</div>
@@ -338,6 +338,8 @@
                     <input type="text" id="form3" class="form-control validate">
                     <label data-error="wrong" data-success="right" for="form3">name</label>
                   </div>
+                  
+                
 
                   <div class="md-form mx-3">
                     <input type="email" id="form2" class="form-control validate">
@@ -346,7 +348,7 @@
 
                 </div>
                 <div class="modal-footer d-flex justify-content-center" style="color: white;background-color:rgb(226,83,47);>
-        <button type="button" class="btn">Subscribe</button>
+                <button id="submit" type="submit" class="btn" data-dismiss="modal">Subscribe</button>
       </div>
     </div>
   </div>
@@ -479,25 +481,29 @@ produced and painted by Vietnamese artist <span><a href="doantuly.html">Do√£n T√
       
 <!--Form credits to https://getbootstrap.com/docs/4.3/components/forms/-->
 <form>
+  <div class="form-group">
+      <input type="text" class="form-control" placeholder="name" required>
+      <label for="text" data-error="wrong" data-success="right"></label>
+  
   <div class="form-group ">
-    <input type="text " class="form-control " id="name " placeholder="name ">
-  </div>
-  <div class="form-group ">
-    <input type="email " class="form-control " id="email " placeholder="email ">
-  </div>
+    <input id="email" type="email" class="form-control" name="email" placeholder="email" required>
+<label for="email" data-error="wrong" data-success="right"></label>
+  
     <div class="form-group ">
-    <textarea class="form-control " id="message " placeholder="message " rows="3 "></textarea>
+    <textarea class="form-control " id="message " placeholder="message " rows="3 " required></textarea>
   </div>
   <div class="row ">
     <div class="col text-center mb-3">
   <button class="btn " type="submit">submit</button>
   </div>
+
+
 </form>
 </div>
 </div>
 </div>
 
-
+</div>
 
 
 
