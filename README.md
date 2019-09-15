@@ -54,7 +54,9 @@ Content in the ‘Song Ye-Jun’ section of the ‘Artists’ page is taken from
 All photos were taken from [Pexels](https://www.pexels.com/), a stock image library, with the exception of the gallery’s logo which I created.
 ### Acknowledgements
 Font converted to CSS using [font-converter.net](https://font-converter.net/en)
+
 Customized BootStrap4 CSS Styling credits to [Saranya Rajendran](https://stackoverflow.com/questions/49400853/how-to-change-navbar-hover-color-on-bootstrap-4/49405726)
+
 Image appear on hover credits to [dedman](https://stackoverflow.com/questions/51232278/image-appear-when-hover-the-text-html-bootstrap)
 
 **This is for educational use.**
